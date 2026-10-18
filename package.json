@@ -1,0 +1,45 @@
+{
+  "name": "reposcore",
+  "version": "0.1.0",
+  "description": "Scan any codebase and get a health score — security, structure, quality, and dependencies.",
+  "type": "module",
+  "bin": {
+    "reposcore": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "start": "node dist/cli.js"
+  },
+  "keywords": [
+    "repo",
+    "health",
+    "audit",
+    "score",
+    "security",
+    "code-quality",
+    "cli",
+    "devtools"
+  ],
+  "author": "Graylining <contact@graylining.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/graylining/reposcore",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/graylining/reposcore"
+  },
+  "dependencies": {
+    "chalk": "^6.0.1",
+    "commander": "^15.0.0",
+    "fast-glob": "^3.3.3",
+    "typescript": "^7.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsup": "^9.0.0",
+    "vitest": "^5.0.5"
+  }
+}
